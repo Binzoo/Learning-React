@@ -1,15 +1,16 @@
+import React from "react";
 import Header from "./components/Header/Header";
-import Body from "./components/Body";
 import Footer from "./components/Footer/Footer";
+import { Outlet } from "react-router-dom";
 
-function App() {
+function Layout() {
   return (
     <>
       <Header />
-      <Body />
+      <Outlet />
       <Footer />
     </>
   );
 }
 
-export default App;
+export default Layout;
